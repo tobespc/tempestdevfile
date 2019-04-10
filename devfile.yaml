@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: nodejs-sample
+name: nodejs-sample-tobes
 projects:
   - name: nodejs-sample
     source:
