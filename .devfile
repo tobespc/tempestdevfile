@@ -9,7 +9,7 @@ projects:
 tools:
    - name: maven
      type: dockerimage
-     image: eclipe/maven-jdk8:latest
+     image: websphere-liberty:webProfile7
      volumes:
        - name: mavenrepo
          containerPath: /root/.m2
