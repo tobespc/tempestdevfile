@@ -1,35 +1,14 @@
 specVersion: 0.0.1
-name: tobes-liberty-docker
+name: petclinic-dev-environment
 projects:
-  - name: tobesliber
+  - name: petclinic
     source:
       type: git
-      location: 'https://github.com/tobespc/cheliberty'
-
+      location: 'https://github.com/che-samples/web-java-spring-petclinic.git'
 tools:
- - name: theia-editor
+  - name: theia-editor
     type: cheEditor
     id: org.eclipse.che.editor.theia:1.0.0
   - name: exec-plugin
     type: chePlugin
     id: che-machine-exec-plugin:0.0.1
-   - name: maven
-     type: dockerimage
-     image: websphere-liberty:webProfile7
-     volumes:
-       - name: mavenrepo
-         containerPath: /root/.m2
-     env:
-       - name: ENV_VAR
-         value: value
-     endpoints:
-       - name: maven-server
-         port: 3101
-         attributes:
-           protocol: http
-           secure: 'true'
-           public: 'true'
-           discoverable: 'false'
-     memoryLimit: 1536M
-     command: ['tail']
-     args: ['-f', '/dev/null']
