@@ -1,10 +1,10 @@
 specVersion: 0.0.1
-name: petclinic-dev-environment
+name: tobes-liberty-docker
 projects:
-  - name: petclinic
+  - name: tobesliber
     source:
       type: git
-      location: 'https://github.com/che-samples/web-java-spring-petclinic.git'
+      location: 'https://github.com/tobespc/cheliberty'
 tools:
   - name: theia-editor
     type: cheEditor
